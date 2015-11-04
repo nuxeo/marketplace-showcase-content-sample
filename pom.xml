@@ -1,37 +1,69 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-
   <parent>
     <groupId>org.nuxeo.ecm.distribution</groupId>
     <artifactId>nuxeo-distribution</artifactId>
     <version>7.10-SNAPSHOT</version>
   </parent>
 
-  <artifactId>marketplace-nuxeo-showcase-content-sample</artifactId>
+  <groupId>org.nuxeo.ecm.platform</groupId>
+  <artifactId>marketplace-nuxeo-showcase-content-parent</artifactId>
+  <packaging>pom</packaging>
+  <name>Nuxeo Showcase Content - Nuxeo package - Parent</name>
   <version>1.0.0-SNAPSHOT</version>
-  <packaging>zip</packaging>
-  <name>Nuxeo Showcase Content - Nuxeo package</name>
 
-  <dependencies>
-    <!-- Additional bundles to be deployed by the MP -->
-    <dependency>
-      <groupId>org.nuxeo.ecm.platform</groupId>
-      <artifactId>nuxeo-showcase-content-importer</artifactId>
-    </dependency>
-  </dependencies>
+  <modules>
+    <module>marketplace</module>
+  </modules>
 
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.nuxeo.build</groupId>
-        <artifactId>ant-assembly-maven-plugin</artifactId>
-        <configuration>
-          <buildFiles>
-            <buildFile>${basedir}/src/main/assemble/assembly.xml</buildFile>
-          </buildFiles>
-        </configuration>
-      </plugin>
-    </plugins>
-  </build>
+  <profiles>
+    <profile>
+      <id>ftest</id>
+      <modules>
+        <module>ftest/webdriver</module>
+      </modules>
+    </profile>
+  </profiles>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.nuxeo.ecm.platform</groupId>
+        <artifactId>marketplace-nuxeo-showcase-content-sample</artifactId>
+        <version>${project.version}</version>
+        <type>zip</type>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+  <repositories>
+    <repository>
+      <id>public</id>
+      <url>http://maven.nuxeo.org/nexus/content/groups/public</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </repository>
+    <repository>
+      <id>public-snapshot</id>
+      <url>http://maven.nuxeo.org/nexus/content/groups/public-snapshot</url>
+      <releases>
+        <enabled>false</enabled>
+      </releases>
+      <snapshots>
+        <updatePolicy>always</updatePolicy>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
+  </repositories>
+
+  <scm>
+    <connection>scm:git:git://github.com/nuxeo/marketplace-showcase-content-sample.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com:nuxeo/marketplace-showcase-content-sample.git</developerConnection>
+    <url>https://github.com/nuxeo/marketplace-showcase-content-sample</url>
+  </scm>
 
 </project>
