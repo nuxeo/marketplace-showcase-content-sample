@@ -1,49 +1,18 @@
-# About feature
+# Showcase Content Sample
 
-* What is it, what does it do / Abstract
-* Project status: working/prototype
+* Add some sample showcase content in your instance like some pictures, videos, ...
+* Project status: working
 * Nuxeo Support
 
-# Sub-modules organization
-
-For complex projects, explains the organization of the project
-Sample: https://github.com/nuxeo/nuxeo-template-rendering/blob/master/ReadMe.md
 
 # Building
 
     mvn clean install
 
-## Requirements
-
-See [CORG/Compiling Nuxeo from sources](http://doc.nuxeo.com/x/xION)
-
-Sample: https://github.com/nuxeo/nuxeo-distribution
-
-## Limitations
-
-Sample: https://github.com/nuxeo/nuxeo-elasticsearch/blob/master/README.md
 
 ## QA
 
-[![Build Status](https://qa.nuxeo.org/jenkins/buildStatus/icon?job=addons_nuxeo-sample-project-master)](https://qa.nuxeo.org/jenkins/job/addons_nuxeo-sample-project-master/)
-
-If QA resources are included, sample: https://github.com/nuxeo/nuxeo-sdk-ios/blob/master/README.md
-
-## Deploying
-
-Direct to MP package if any. Otherwise provide steps to deploy on Nuxeo Platform: copy JAR bundles into `$NUXEO_HOME/templates/custom/bundles/` and activate the `custom` template.
-Sample: Install [the Sample Marketplace Package](https://connect.nuxeo.com/nuxeo/site/marketplace/package/nuxeo-sample).
-Or manually copy the built artifacts into `$NUXEO_HOME/templates/custom/bundles/` and activate the "custom" template.
-
-# Resources
-
-## Documentation
-
-## Reporting issues
-
-Link to JIRA component (or project if there is no component for that project).
-Sample: https://jira.nuxeo.com/browse/NXP/component/14503/
-Sample: https://jira.nuxeo.com/secure/CreateIssue!default.jspa?project=NXP
+[![Build Status](https://qa.nuxeo.org/jenkins/buildStatus/icon?job=addons_FT_nuxeo-showcase-content-sample-master)](https://qa.nuxeo.org/jenkins/job/addons_FT_nuxeo-showcase-content-sample-master/)
 
 # Licensing
 
