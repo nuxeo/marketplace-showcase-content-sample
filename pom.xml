@@ -27,7 +27,7 @@
       <id>ftest</id>
       <modules>
         <module>ftest/webdriver</module>
-        <module>marketplace-showcase-content-sample-resources</module>
+        <module>resources</module>
       </modules>
     </profile>
   </profiles>
