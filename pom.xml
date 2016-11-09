@@ -26,7 +26,7 @@
     <profile>
       <id>ftest</id>
       <modules>
-        <module>ftest/webdriver</module>
+        <module>ftest/startup</module>
         <module>resources</module>
       </modules>
     </profile>

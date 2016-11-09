@@ -8,32 +8,13 @@
     <relativePath>../../pom.xml</relativePath>
   </parent>
 
-  <artifactId>webdriver</artifactId>
-  <name>Nuxeo Showcase Content - Nuxeo package - WebDriver</name>
+  <artifactId>startup</artifactId>
+  <name>Nuxeo Showcase Content - Nuxeo package - Startup test</name>
 
   <dependencies>
     <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>commons-io</groupId>
-      <artifactId>commons-io</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.seleniumhq.selenium</groupId>
-      <artifactId>selenium-server-standalone</artifactId>
-    </dependency>
-    <dependency>
       <groupId>org.nuxeo.ecm.distribution</groupId>
-      <artifactId>nuxeo-functional-tests</artifactId>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.nuxeo.ecm.distribution</groupId>
-      <artifactId>nuxeo-distribution-tomcat</artifactId>
-      <classifier>nuxeo-cap</classifier>
+      <artifactId>nuxeo-server-tomcat</artifactId>
       <type>zip</type>
       <scope>test</scope>
     </dependency>
