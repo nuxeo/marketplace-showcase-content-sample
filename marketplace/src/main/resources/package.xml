@@ -2,7 +2,7 @@
 <package type="addon" name="nuxeo-showcase-content" version="@VERSION@">
   <title>Nuxeo Showcase Content</title>
   <description>
-    <p>This addon adds a showcase content sample to your Nuxeo instance.</p>
+    <p>The Nuxeo Showcase Content addon imports a set of showcase content so that the repository is not empty for your first steps: office documents, images, videos.</p>
   </description>
   <home-page>http://doc.nuxeo.com/</home-page>
   <vendor>Nuxeo</vendor>
