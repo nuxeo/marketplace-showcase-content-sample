@@ -19,7 +19,7 @@
 
   <properties>
     <sample.data.version>1.2</sample.data.version>
-    <marketplace.dam.version>6.2.3-SNAPSHOT</marketplace.dam.version>
+    <marketplace.dam.version>6.3.0-SNAPSHOT</marketplace.dam.version>
   </properties>
 
   <profiles>
