@@ -24,6 +24,10 @@
       <artifact:file key="org.nuxeo.ecm.platform:marketplace-nuxeo-showcase-content-resources"/>
     </copy>
 
+    <nx:studioExtraction todir="${outdir}/marketplace">
+      <fileset dir="${outdir}/marketplace/install/bundles"/>
+    </nx:studioExtraction>
+
     <zip destfile="${outdir}/${maven.project.artifactId}-${maven.project.version}.zip"
          basedir="${outdir}/marketplace"/>
     <artifact:attach file="${outdir}/${maven.project.artifactId}-${maven.project.version}.zip" type="zip"/>
