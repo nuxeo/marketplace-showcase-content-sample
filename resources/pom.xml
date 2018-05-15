@@ -3,7 +3,7 @@
   <parent>
     <groupId>org.nuxeo.ecm.platform</groupId>
     <artifactId>marketplace-nuxeo-showcase-content-parent</artifactId>
-    <version>1.3.1-SNAPSHOT</version>
+    <version>1.3.1-I20180515_0416</version>
   </parent>
   <artifactId>marketplace-nuxeo-showcase-content-resources</artifactId>
   <name>Marketplace nuxeo showcase content resources</name>
